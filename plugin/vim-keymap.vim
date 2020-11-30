@@ -8,7 +8,7 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " General keymapping
 noremap j gj
-noremap  gk
+noremap k gk
 noremap <S-h> 0
 noremap <S-l> $
 
