@@ -11,6 +11,11 @@ nnoremap <Space>lr :LspRename<CR>
 nnoremap g[ :LspPreviousError<CR>
 nnoremap g] :LspNextError<CR>
 
+let g:lsp_signs_enabled = 1
+let g:lsp_signs_warning = {'text': '\uf071'}
+let g:lsp_signs_error = {'text': '\ufb8a'}
+
+
 
 "" auto close when completion is done.
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
